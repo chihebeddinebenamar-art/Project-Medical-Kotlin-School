@@ -22,4 +22,3 @@ Pour toute question ou information supplémentaire, n'hésitez pas à nous conta
 
 ---
 
-*Développé avec ❤️ en Kotlin*" 
