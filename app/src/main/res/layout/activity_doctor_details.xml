@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigationView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Header avec retour et appel -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageButton
+                    android:id="@+id/backButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_back"
+                    android:contentDescription="Back" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/callButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_call"
+                    android:contentDescription="Call" />
+            </LinearLayout>
+
+            <!-- Photo, nom, spécialité -->
+            <ImageView
+                android:id="@+id/doctorImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/circle_background"
+                android:padding="8dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/doctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr. Upul"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#2DB7B2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/doctorSpecialty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dentist"
+                android:textSize="16sp"
+                android:textColor="#888888"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp" />
+
+            <!-- Bloc Details -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#2DB7B2"
+                android:layout_marginTop="18dp" />
+
+            <TextView
+                android:id="@+id/doctorDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description du docteur ici..."
+                android:textSize="14sp"
+                android:textColor="#888888"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Working Hours -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Working Hours"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#2DB7B2"
+                android:layout_marginTop="18dp" />
+
+            <LinearLayout
+                android:id="@+id/hoursContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_background"
+                android:padding="16dp">
+                <!-- Les horaires seront ajoutés dynamiquement ici -->
+            </LinearLayout>
+
+            <!-- Book an Appointment Button -->
+            <Button
+                android:id="@+id/bookAppointmentButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book an Appointment"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#2DB7B2"
+                android:textSize="16sp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:padding="12dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Barre de navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:itemIconTint="@color/teal_700"
+        app:itemTextColor="@color/teal_700"
+        app:menu="@menu/bottom_nav_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout> 

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "831231698600",
+    "firebase_url": "https://projet-1-4ecfe-default-rtdb.firebaseio.com",
+    "project_id": "projet-1-4ecfe",
+    "storage_bucket": "projet-1-4ecfe.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831231698600:android:df3167019437a47086049d",
+        "android_client_info": {
+          "package_name": "com.example.rendezvousv2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFttSIjw7kRBWIk5nFkgeXyemTu7D36dU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

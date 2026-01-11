@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "547831279759",
+    "firebase_url": "https://rendez-vou-default-rtdb.firebaseio.com",
+    "project_id": "rendez-vou",
+    "storage_bucket": "rendez-vou.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547831279759:android:12b7051a773cb54dc100fa",
+        "android_client_info": {
+          "package_name": "com.example.rendez_vous"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnw_CmVp_dEpJuP7v8jT065SxnzIS6U1Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
