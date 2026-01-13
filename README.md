@@ -16,14 +16,14 @@ Cette application est une plateforme de gestion de rendez-vous médicaux dévelo
 
 ## Captures d'écran
 
-| | |
-|---|---|
-| **Écran d'introduction** | **Écran de connexion** |
-| <img src="assetsreadme/intro-APP-Medical.jpeg" width="280" /> | <img src="assetsreadme/login-APP-Medical.jpeg" width="280" /> |
-| **Écran d'accueil** | **Liste des rendez-vous** |
-| <img src="assetsreadme/Home-APP-Medical.jpeg" width="280" /> | <img src="assetsreadme/Liste-APP-Medical.jpeg" width="280" /> |
-| **Détails du rendez-vous** | |
-| <img src="assetsreadme/details-APP-Medical.jpeg" width="280" /> | |
+|                                                                 |                                                               |
+| --------------------------------------------------------------- | ------------------------------------------------------------- |
+| **Écran d'introduction**                                        | **Écran de connexion**                                        |
+| <img src="assetsreadme/intro-APP-Medical.jpeg" width="280" />   | <img src="assetsreadme/login-APP-Medical.jpeg" width="280" /> |
+| **Écran d'accueil**                                             | **Liste des rendez-vous**                                     |
+| <img src="assetsreadme/Home-APP-Medical.jpeg" width="280" />    | <img src="assetsreadme/Liste-APP-Medical.jpeg" width="280" /> |
+| **Détails du rendez-vous**                                      |                                                               |
+| <img src="assetsreadme/details-APP-Medical.jpeg" width="280" /> |                                                               |
 
 ## Contact
 
