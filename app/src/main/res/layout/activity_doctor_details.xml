@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/background">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -27,10 +27,11 @@
 
                 <ImageButton
                     android:id="@+id/backButton"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:src="@drawable/ic_back"
+                    android:tint="@color/text_primary"
                     android:contentDescription="Back" />
 
                 <View
@@ -40,22 +41,24 @@
 
                 <ImageButton
                     android:id="@+id/callButton"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:src="@drawable/ic_call"
+                    android:tint="@color/secondary_600"
                     android:contentDescription="Call" />
             </LinearLayout>
 
             <!-- Photo, nom, spécialité -->
             <ImageView
                 android:id="@+id/doctorImage"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/circle_background"
                 android:padding="8dp"
+                android:elevation="8dp"
                 android:scaleType="centerCrop" />
 
             <TextView
@@ -63,11 +66,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Dr. Upul"
-                android:textSize="22sp"
+                android:textSize="24sp"
                 android:textStyle="bold"
-                android:textColor="#2DB7B2"
+                android:textColor="@color/text_primary"
+                android:fontFamily="sans-serif-medium"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="8dp" />
+                android:layout_marginTop="12dp" />
 
             <TextView
                 android:id="@+id/doctorSpecialty"
@@ -75,9 +79,10 @@
                 android:layout_height="wrap_content"
                 android:text="Dentist"
                 android:textSize="16sp"
-                android:textColor="#888888"
+                android:textColor="@color/secondary_700"
+                android:textStyle="bold"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="2dp" />
+                android:layout_marginTop="4dp" />
 
             <!-- Bloc Details -->
             <TextView
@@ -85,19 +90,21 @@
                 android:layout_height="wrap_content"
                 android:text="Details"
                 android:textStyle="bold"
-                android:textSize="18sp"
-                android:textColor="#2DB7B2"
-                android:layout_marginTop="18dp" />
+                android:textSize="20sp"
+                android:textColor="@color/text_primary"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginTop="28dp" />
 
             <TextView
                 android:id="@+id/doctorDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Description du docteur ici..."
-                android:textSize="14sp"
-                android:textColor="#888888"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="12dp" />
+                android:textSize="15sp"
+                android:textColor="@color/text_secondary"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp" />
 
             <!-- Working Hours -->
             <TextView
@@ -105,34 +112,38 @@
                 android:layout_height="wrap_content"
                 android:text="Working Hours"
                 android:textStyle="bold"
-                android:textSize="18sp"
-                android:textColor="#2DB7B2"
-                android:layout_marginTop="18dp" />
+                android:textSize="20sp"
+                android:textColor="@color/text_primary"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginTop="20dp" />
 
             <LinearLayout
                 android:id="@+id/hoursContainer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/rounded_background"
-                android:padding="16dp">
+                android:layout_marginTop="12dp"
+                android:background="@drawable/doctor_card_background"
+                android:elevation="4dp"
+                android:padding="18dp">
                 <!-- Les horaires seront ajoutés dynamiquement ici -->
             </LinearLayout>
 
             <!-- Book an Appointment Button -->
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/bookAppointmentButton"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="58dp"
                 android:text="Book an Appointment"
                 android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                android:backgroundTint="#2DB7B2"
+                android:textColor="@color/text_on_secondary"
+                android:textStyle="bold"
+                android:background="@drawable/button_primary_background"
                 android:textSize="16sp"
-                android:layout_marginTop="24dp"
+                android:elevation="8dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginBottom="16dp"
-                android:padding="12dp" />
+                app:cornerRadius="29dp" />
 
         </LinearLayout>
     </ScrollView>
@@ -142,9 +153,12 @@
         android:id="@+id/bottomNavigationView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@android:color/white"
-        app:itemIconTint="@color/teal_700"
-        app:itemTextColor="@color/teal_700"
+        android:background="@drawable/bottom_nav_background"
+        android:elevation="16dp"
+        app:itemIconTint="@color/secondary_700"
+        app:itemTextColor="@color/secondary_700"
+        app:itemActiveIndicatorStyle="@null"
+        app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_nav_menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

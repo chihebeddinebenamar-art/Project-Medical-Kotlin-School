@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.rendez_vous">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -35,9 +35,6 @@
             android:exported="false" />
         <activity
             android:name=".AllDoctorsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DetailsActivity"
             android:exported="false" />
         <activity
             android:name=".ProfileActivity"

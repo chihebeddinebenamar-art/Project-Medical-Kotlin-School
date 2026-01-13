@@ -9,7 +9,7 @@ import com.google.android.material.button.MaterialButton
 
 class DoctorAdapter(
     private val items: List<DoctorModel>,  // Liste des médecins à afficher
-    private val onBookClick: (DoctorModel) -> Unit  // Fonction de callback pour le clic sur "Book"
+    private val onItemClick: (DoctorModel) -> Unit  // Fonction de callback pour le clic sur l'item
 ) : RecyclerView.Adapter<DoctorAdapter.DoctorViewHolder>() {
 
     // Classe interne pour gérer les vues d'un élément
@@ -20,8 +20,7 @@ class DoctorAdapter(
         val doctorImage: ImageView = itemView.findViewById(R.id.doctorImage)
         val doctorName: TextView = itemView.findViewById(R.id.doctorName)
         val doctorSpecialty: TextView = itemView.findViewById(R.id.doctorSpecialty)
-        val doctorRating: TextView = itemView.findViewById(R.id.doctorRating)
-        val bookButton: MaterialButton = itemView.findViewById(R.id.bookButton)
+        val doctorDesc: TextView = itemView.findViewById(R.id.doctorDesc)
     }
 
     // Crée une nouvelle vue pour chaque élément
@@ -35,8 +34,12 @@ class DoctorAdapter(
         holder.doctorImage.setImageResource(item.imageRes)
         holder.doctorName.text = item.name
         holder.doctorSpecialty.text = item.specialty
-        holder.doctorRating.text = item.rating.toString()
-        holder.bookButton.setOnClickListener { onBookClick(item) }
+        holder.doctorDesc.text = item.description
+        
+        // Clic sur l'item entier pour naviguer vers les détails
+        holder.itemView.setOnClickListener {
+            onItemClick(item)
+        }
     }
 
     // Retourne le nombre total d'éléments

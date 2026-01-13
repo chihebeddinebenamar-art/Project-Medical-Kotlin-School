@@ -30,7 +30,7 @@ class AllDoctorsActivity : AppCompatActivity() {
                 name = "Dr. Ahmed Ben Salah",
                 specialty = "Cardiologue",
                 rating = 4.9,
-                imageRes = R.drawable.ic_profile,
+                imageRes = R.drawable.doc1,
                 description = "Spécialiste en cardiologie à l'hôpital La Rabta, Tunis, avec plus de 15 ans d'expérience.",
                 workingHours = mapOf(
                     "Lun" to listOf("09:00", "11:00"),
@@ -43,7 +43,7 @@ class AllDoctorsActivity : AppCompatActivity() {
                 name = "Dr. Leila Trabelsi",
                 specialty = "Dentiste",
                 rating = 4.7,
-                imageRes = R.drawable.ic_profile,
+                imageRes = R.drawable.doc2,
                 description = "Dentiste à Sousse, spécialiste en orthodontie et soins esthétiques.",
                 workingHours = mapOf(
                     "Mar" to listOf("08:30", "12:00"),
@@ -56,7 +56,7 @@ class AllDoctorsActivity : AppCompatActivity() {
                 name = "Dr. Sirine",
                 specialty = "Dentiste",
                 rating = 4.7,
-                imageRes = R.drawable.ic_profile,
+                imageRes = R.drawable.doc3,
                 description = "Dentiste à Sousse, spécialiste en orthodontie et soins esthétiques.",
                 workingHours = mapOf(
                     "Mar" to listOf("08:30", "12:00"),
@@ -65,11 +65,11 @@ class AllDoctorsActivity : AppCompatActivity() {
                 phoneNumber = "+21622112233"
             ),
             DoctorModel(
-                id = 3,
+                id = 4,
                 name = "Dr. Hichem Bouzid",
                 specialty = "Chirurgien",
                 rating = 4.8,
-                imageRes = R.drawable.ic_profile,
+                imageRes = R.drawable.doc4,
                 description = "Chirurgien général à l'hôpital Charles Nicolle, Tunis.",
                 workingHours = mapOf(
                     "Lun" to listOf("10:00", "13:00"),
@@ -78,11 +78,11 @@ class AllDoctorsActivity : AppCompatActivity() {
                 phoneNumber = "+21623456789"
             ),
             DoctorModel(
-                id = 4,
+                id = 5,
                 name = "Dr. Amira Gharbi",
                 specialty = "Pédiatre",
                 rating = 4.6,
-                imageRes = R.drawable.ic_profile,
+                imageRes = R.drawable.doc5,
                 description = "Pédiatre à Monastir, attentive et à l'écoute des enfants.",
                 workingHours = mapOf(
                     "Mer" to listOf("09:00", "12:00"),
@@ -106,7 +106,6 @@ class AllDoctorsActivity : AppCompatActivity() {
         )
 
         doctorAdapter = DoctorAdapter(allDoctors.toMutableList()) { doctor ->
-            // Lancer DoctorDetailsActivity avec les données du docteur
             val intent = Intent(this, DoctorDetailsActivity::class.java).apply {
                 putExtra("doctor", doctor)
             }
@@ -151,7 +150,6 @@ class AllDoctorsActivity : AppCompatActivity() {
             it.specialty.contains(query, ignoreCase = true)
         }
         doctorAdapter = DoctorAdapter(filtered) { doctor ->
-            // Lancer DoctorDetailsActivity avec les données du docteur
             val intent = Intent(this, DoctorDetailsActivity::class.java).apply {
                 putExtra("doctor", doctor)
             }

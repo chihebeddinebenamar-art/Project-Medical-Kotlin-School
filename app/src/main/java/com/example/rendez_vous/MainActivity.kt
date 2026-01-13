@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
                 name = "Dr. Ahmed Ben Salah",
                 specialty = "Cardiologue",
                 rating = 4.9,
-                imageRes = R.drawable.ic_profile,
+                imageRes = R.drawable.doc1,
                 description = "Spécialiste en cardiologie à l'hôpital La Rabta, Tunis, avec plus de 15 ans d'expérience.",
                 workingHours = mapOf(
                     "Lun" to listOf("09:00", "11:00"),
@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
                 name = "Dr. Leila Trabelsi",
                 specialty = "Dentiste",
                 rating = 4.7,
-                imageRes = R.drawable.ic_profile,
+                imageRes = R.drawable.doc2,
                 description = "Dentiste à Sousse, spécialiste en orthodontie et soins esthétiques.",
                 workingHours = mapOf(
                     "Mar" to listOf("08:30", "12:00"),
@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
                 name = "Dr. Hichem Bouzid",
                 specialty = "Chirurgien",
                 rating = 4.8,
-                imageRes = R.drawable.ic_profile,
+                imageRes = R.drawable.doc3,
                 description = "Chirurgien général à l'hôpital Charles Nicolle, Tunis.",
                 workingHours = mapOf(
                     "Lun" to listOf("10:00", "13:00"),
@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity() {
                 name = "Dr. Amira Gharbi",
                 specialty = "Pédiatre",
                 rating = 4.6,
-                imageRes = R.drawable.ic_profile,
+                imageRes = R.drawable.doc4,
                 description = "Pédiatre à Monastir, attentive et à l'écoute des enfants.",
                 workingHours = mapOf(
                     "Mer" to listOf("09:00", "12:00"),
@@ -104,7 +104,7 @@ class MainActivity : AppCompatActivity() {
                 name = "Dr. Sami Jaziri",
                 specialty = "Neurologue",
                 rating = 4.5,
-                imageRes = R.drawable.ic_profile,
+                imageRes = R.drawable.doc5,
                 description = "Neurologue à Sfax, spécialiste des troubles du sommeil.",
                 workingHours = mapOf(
                     "Mar" to listOf("09:00", "11:00"),

@@ -4,22 +4,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background">
+    android:background="@drawable/medical_gradient_primary">
 
     <ImageView
         android:id="@+id/introImage"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="40dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/capture_d__cran_2025_02_07_151602"
+        android:elevation="12dp"
+        android:src="@drawable/photologo"
         app:layout_constraintBottom_toTopOf="@+id/textContainer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHeight_percent="0.5" />
+        app:layout_constraintHeight_percent="0.45" />
 
     <LinearLayout
         android:id="@+id/textContainer"
@@ -27,6 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/startButton"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,9 +39,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Find Your Doctor"
-            android:textColor="@color/white"
-            android:textSize="32sp"
+            android:textColor="@color/text_on_primary"
+            android:textSize="36sp"
             android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
             android:gravity="center" />
 
         <TextView
@@ -48,29 +51,32 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Book appointments with the best doctors in your area"
-            android:textColor="@color/white"
-            android:textSize="18sp"
+            android:textColor="@color/text_on_primary"
+            android:alpha="0.95"
+            android:textSize="17sp"
             android:gravity="center"
-            android:lineSpacingExtra="8sp" />
+            android:lineSpacingExtra="6sp" />
 
     </LinearLayout>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/startButton"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="62dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="40dp"
         android:padding="16dp"
         android:text="Get Started"
         android:textSize="18sp"
-        android:textColor="@color/white"
-        app:backgroundTint="@color/purple_500"
-        app:cornerRadius="16dp"
-        app:elevation="4dp"
+        android:textStyle="bold"
+        android:textColor="@color/text_on_primary"
+        android:background="@drawable/button_secondary_background"
+        android:elevation="12dp"
         app:icon="@drawable/ic_arrow_forward"
-        app:iconTint="@color/white"
+        app:iconTint="@color/secondary_700"
+        app:iconGravity="end"
+        app:cornerRadius="31dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
