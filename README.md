@@ -14,6 +14,28 @@ Cette application est une plateforme de gestion de rendez-vous médicaux dévelo
 - ✅ **Interface responsif** : Design adapté à tous les appareils Android
 - ✅ **Synchronisation** : Synchronisation des données avec une base de données cloud
 
+## Captures d'écran
+
+### Écran d'introduction
+
+![Intro APP Medical](assetsreadme/intro-APP-Medical.jpeg)
+![alt text](intro-APP-Medical.jpeg)
+### Écran de connexion
+
+![Login APP Medical](assetsreadme/login-APP-Medical.jpeg)
+
+### Écran d'accueil
+
+![Home APP Medical](assetsreadme/Home-APP-Medical.jpeg)
+
+### Liste des rendez-vous
+
+![Liste APP Medical](assetsreadme/Liste-APP-Medical.jpeg)
+
+### Détails du rendez-vous
+
+![Détails APP Medical](assetsreadme/details-APP-Medical.jpeg)
+
 ## Contact
 
 Pour toute question ou information supplémentaire, n'hésitez pas à nous contacter à :
@@ -21,4 +43,3 @@ Pour toute question ou information supplémentaire, n'hésitez pas à nous conta
 📧 **Email** : [chihebeddine.benamar@gmail.com](mailto:chihebeddine.benamar@gmail.com)
 
 ---
-
